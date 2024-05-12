@@ -27,12 +27,21 @@ function draw() {
 
   // Draw polka dots:
   // TODO: Set no stroke and fill color
-
+  fill('#ffd700');
+  noStroke();
 
 
   // TODO: Use nested for loops to draw a grid of circles
   // TODO: Offset y positions of every other column by 10 pixels
-
+  for (posX = 0; posX < 10; posX++) {
+    for (posY = 0; posY < 10; posY++) {
+        if (posX % 2 === 0) {
+            circle(250 + posX * 25, posY * 25 + 10 , 10);
+        } else {
+        circle(250 + posX * 25, posY * 25, 10);
+        }
+    }
+  }
 
 
   // Draw checkered squares:

@@ -1,13 +1,17 @@
 // TODO: Create setup() function
-
+function setup() {
+    
   // Inside the setup() function:
   // TODO: Create canvas 500px wide and 500px high
+  createCanvas(500, 500);
 
   // TODO: Draw horizontal and vertical guidelines
-
-
+  line(250, 0, 250, 500);
+  line(0, 250, 500, 250);
+}
 
 // TODO: Create wall drawing inside draw() function
+function draw() {
 
   // Inside the draw() function:
   // Draw parallel lines:
@@ -55,4 +59,4 @@
 
   // TODO: Draw borders around canvas
 
-
+}

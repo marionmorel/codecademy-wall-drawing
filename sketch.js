@@ -16,11 +16,13 @@ function draw() {
   // Inside the draw() function:
   // Draw parallel lines:
   // TODO: Set stroke color and weight
-
-
+ stroke(127);
+ strokeWeight(10);
 
   // TODO: Use a for loop to draw 10 vertical lines
-
+  for (let posX = 0; posX < 10; posX++) {
+    line(posX * 25, 0, posX * 25, 250);
+  }
 
 
   // Draw polka dots:

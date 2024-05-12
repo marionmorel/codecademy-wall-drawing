@@ -6,8 +6,7 @@ function setup() {
   createCanvas(500, 500);
 
   // TODO: Draw horizontal and vertical guidelines
-  line(250, 0, 250, 500);
-  line(0, 250, 500, 250);
+
 }
 
 // TODO: Create wall drawing inside draw() function
@@ -21,7 +20,7 @@ function draw() {
 
   // TODO: Use a for loop to draw 10 vertical lines
   for (let posX = 0; posX < 10; posX++) {
-    line(posX * 25, 0, posX * 25, 250);
+    line(12 + posX * 25, 0, 12 + posX * 25, 250);
   }
 
 
@@ -35,9 +34,9 @@ function draw() {
   for (posX = 0; posX < 10; posX++) {
     for (posY = 0; posY < 10; posY++) {
         if (posX % 2 === 0) {
-            circle(250 + posX * 25, posY * 25 + 10 , 10);
+            circle(262 + posX * 25, posY * 25 + 10 , 10);
         } else {
-        circle(250 + posX * 25, posY * 25, 10);
+        circle(262 + posX * 25, posY * 25, 10);
         }
     }
   }
@@ -74,11 +73,17 @@ function draw() {
 
   // Draw borders:
   // TODO: Set stroke color
+  stroke('black');
 
 
   // TODO: Draw horizontal and vertical guidelines
+  line(250, 0, 250, 500);
+  line(0, 250, 500, 250);
 
 
   // TODO: Draw borders around canvas
-
+  line(0, 0, 0, 500);
+  line(500, 0, 500, 500);
+  line(0, 500, 500, 500)
+  line(0, 0, 500, 0);
 }

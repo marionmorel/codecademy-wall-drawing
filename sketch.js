@@ -62,10 +62,14 @@ function draw() {
   
   // Draw parallel diagonal lines:
   // TODO: Set stroke color and weight
-
+  stroke('blue');
+  strokeWeight(10);
 
   // TODO: Use a for loop to draw diagonal lines
-
+  for (let i = 0; i < 10; i++) {
+    line(250, 500 - i * 25, 250 + i * 25, 500);
+    line(250 + i * 25, 250, 500, 500 - i * 25);
+  }
 
 
   // Draw borders:

@@ -30,7 +30,6 @@ function draw() {
   fill('#ffd700');
   noStroke();
 
-
   // TODO: Use nested for loops to draw a grid of circles
   // TODO: Offset y positions of every other column by 10 pixels
   for (posX = 0; posX < 10; posX++) {
@@ -46,11 +45,19 @@ function draw() {
 
   // Draw checkered squares:
   // TODO: Set fill color
-
+  fill('red');
 
   // TODO: Use nested for loops to draw rows of squares
   // TODO: Offset y positions of every other column by 25 pixels
-
+  for (posX = 0; posX < 10; posX++) {
+    for (posY = 0; posY < 5; posY++) {
+        if (posX % 2 === 0) {
+            square(posX * 25, 250 + posY * 50 + 25, 25)
+        } else {
+            square(posX * 25, 250 + posY * 50, 25)
+        }
+    }
+  }
 
   
   // Draw parallel diagonal lines:
